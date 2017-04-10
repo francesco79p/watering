@@ -114,11 +114,10 @@ void update(StatusReg * _pic, char temp, char tmax, char tmin, strTime t, unsign
 
 	unsigned char buffer[24];
   
-    /// col cls sfarfalla lo schermo
-    //clear_screen();
+
     LCD_HOME();
     sprintf(buffer,"T:%2dC,%2d/%2d,hr:%d WL:%3d",temp, tmax,tmin,k, wr);      
-    //sprintf(buffer,"T:%2dC,%2d/%2d,hr:%d WL:%3d",temp, tmax,tmin,tacs, wr);
+
     Lcd_nPrintf(buffer,24);
     
     Lcd_XY( 0, 1);
