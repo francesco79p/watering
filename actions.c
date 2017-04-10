@@ -131,26 +131,6 @@ void update(StatusReg * _pic, char temp, char tmax, char tmin, strTime t, unsign
 }
 
 
-//void update2(StatusReg * _pic)
-//{
-//
-//	unsigned char buffer[24];
-//
-//    
-//    LCD_HOME();
-//    sprintf(buffer,"Curr Task:%4d",_pic->TASK );
-//    Lcd_nPrintf(buffer,16);
-//    
-//    Lcd_XY( 0, 1);
-//    sprintf(buffer,"                        ");
-//    Lcd_nPrintf(buffer,24);
-//    delayT0(2000);
-//
-//}
-
-
-
-
 
 void manageMenu(StatusReg * _pic, menuItem ** _cm, unsigned char keyb){
 
